@@ -14,7 +14,7 @@ public interface PositionalList<E> {
 	E set(Position<E> p, E e) throws IllegalArgumentException;
 	E remove(Position<E> p) throws IllegalArgumentException;
         //Metodo a implementar
-        Position<E> positionAtIndex(int i);
+        Position<E> positionAtIndex(int i)throws IllegalArgumentException;
         
 
 }
