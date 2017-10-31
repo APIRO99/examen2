@@ -1,9 +1,25 @@
 package gt.edu.url.examen2.problema4;
 
 public interface PositionalList<E> {
+    	/**
+	 * Returns PositionalList elements count
+	 * @return number of elements in stack
+	 */
 	int size( );
+        /**
+	 * Returns if the PositionalList is empty
+	 * @return true if is empty
+	 */
 	boolean isEmpty( );
+        /**
+	 * Returns the first positon of the PositionalList
+	 * @return the element in the first position
+	 */
 	Position<E> first( );
+         /**
+	 * Returns the last positon of the PositionalList
+	 * @return the element in the last position
+	 */
 	Position<E> last( );
 	Position<E> addFirst(E e);
 	Position<E> addLast(E e);
