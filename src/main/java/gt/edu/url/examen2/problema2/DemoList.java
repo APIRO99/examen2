@@ -10,5 +10,10 @@ package gt.edu.url.examen2.problema2;
  * @author tuxtor
  */
 public interface DemoList {
+    
+        /**
+	 * creates a new list with specific nodes
+	 * @return the new list
+	 */
     List<Integer> crearDemoLista();
 }
