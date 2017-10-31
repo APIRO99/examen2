@@ -53,6 +53,7 @@ public class examen2 {
         }
         */
         //Problema4_____________________________________________________________
+        /*
         PositionalList<Integer> myPL4 = new PL<>();
         Position<Integer> p4, a4, b4;
         p4 = myPL4.addFirst(1);
@@ -61,17 +62,42 @@ public class examen2 {
         p4 = myPL4.addAfter(p4, 4);
         p4 = myPL4.addAfter(p4, 5);
 
-        p4 = myPL4.first();
         for (int i = 0; i < 5; i++) {
-            System.out.println(myPL4.after(p4));
-            //p4 = p4.next;
+            System.out.println(myPL4.remove(myPL4.first()));
         }
         
-        System.out.println("");
-        System.out.println(myPL4.positionAtIndex(2));
-        System.out.println(myPL4.positionAtIndex(3));
-        System.out.println(myPL4.positionAtIndex(7));
+        p4 = myPL4.addFirst(1);
+        p4 = myPL4.addAfter(p4, 2);
+        p4 = myPL4.addAfter(p4, 3);
+        p4 = myPL4.addAfter(p4, 4);
+        p4 = myPL4.addAfter(p4, 5);
         
+        System.out.println("");
+        System.out.println(myPL4.positionAtIndex(2).getElement());
+        System.out.println(myPL4.positionAtIndex(3).getElement());
+        System.out.println(myPL4.positionAtIndex(7).getElement());
+        */
         //Problema5_____________________________________________________________
+        /*
+        Stack <Integer> myS = new DynamicStack<>();
+        
+        myS.push(1);
+        myS.push(2);
+        myS.push(3);
+        myS.push(4);
+        myS.push(5);
+        myS.push(6);
+        myS.push(7);
+        myS.push(8);
+        myS.push(9);
+        myS.push(10);
+        myS.push(11);
+        myS.push(12);
+        
+        
+        for (int i = 0; i < 15; i++) {
+            System.out.println(myS.pop());
+        }
+        */        
     }
 }

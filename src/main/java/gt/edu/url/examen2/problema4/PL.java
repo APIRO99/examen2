@@ -34,11 +34,7 @@ public class PL<E> implements PositionalList<E> {
             next = n;
         }
 
-        public E getElement() throws IllegalStateException {
-            if (next == null) // Nodo no valido
-            {
-                throw new IllegalStateException("Posicion invalida");
-            }
+        public E getElement(){
             return element;
         }
 
@@ -173,17 +169,16 @@ public class PL<E> implements PositionalList<E> {
         return answer;
     }
 
-    public Position<E> positionAtIndex(int i) throws IllegalArgumentException {
+    public Position<E> positionAtIndex(int i) {
         Node<E> P = header;
-        
-        for (int j = 0; j < i; j++) {
-            if (!(P instanceof Node)) {
-                throw new IllegalArgumentException("P invalido");
-            }
-            else {
+
+        if (i > size) {
+            return trailer;
+        } else {
+            for (int j = 0; j < i; j++) {
                 P = P.next;
             }
+            return P;
         }
-        return P;
     }
 }
